@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+.game-container {
+    padding-top: 20px;
+}
+
+#playground {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    cursor: crosshair;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.bubble:active {
+    transform: scale(1.2);
+}
